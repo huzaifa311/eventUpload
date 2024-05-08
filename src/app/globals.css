@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .product-carousel .react-multi-carousel-item {
+    width: 33.33%; /* Show three items per row on larger screens */
+  }
+}
+
+@media (max-width: 1023px) {
+  .product-carousel .react-multi-carousel-item {
+    width: 100%; /* Show one item per row on smaller screens */
+  }
+}
+
+
+.p{
+  
+  text-shadow: 1px 1px 10px rgb(240, 157, 171), 1px 1px 10px rgb(240, 157, 171);
+  
+  
+}
+
+
+
